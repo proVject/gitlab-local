@@ -1,6 +1,7 @@
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
+    container_name: gitlab
     restart: always
     hostname: 'gitlab.eamile.com'  # replace on your domain or ip
     environment:

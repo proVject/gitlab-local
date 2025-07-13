@@ -17,7 +17,13 @@ docker compose up -d
 ```
 it can take some time to initialize the container
 
-6. open [gitlba.<YOUR_DOMAIN>](https://gitlab.example.com)
+6. get your root password
+```bash
+root@cliwave:~/gitlab# docker exec -it gitlab cat /etc/gitlab/initial_root_password
+#Password: <YOUR ROOT PASSWORD>
+```
+
+7. open [gitlba.<YOUR_DOMAIN>](https://gitlab.example.com)
 
 
 
