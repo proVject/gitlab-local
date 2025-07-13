@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
@@ -8,6 +6,7 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url 'https://gitlab.eamile.com'  # replace on your url
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
 # Uncomment for HTTPS (див. далі)
 #        letsencrypt['enable'] = true
 #        letsencrypt['contact_emails'] = ['info@example.com']
